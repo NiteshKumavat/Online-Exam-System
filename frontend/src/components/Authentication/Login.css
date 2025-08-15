@@ -1,0 +1,141 @@
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #151212;
+}
+
+
+.login-container {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 12px;
+  background-color: white;
+}
+
+.image-quote {
+  flex: 1;
+  background-image: url("./study.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+
+.image-quote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.image-quote p {
+  position: relative;
+  z-index: 1;
+  max-width: 90%;
+  color: burlywood;
+}
+
+.login-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.login-form h3 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: #555;
+  text-align: center;
+}
+
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+  border-bottom: 1px solid #007BFF; 
+}
+
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #555;
+}
+
+
+.login-form a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+#forget, #google{
+    margin: 12px 0 ;
+}
+
+#forget{
+    display: block;
+    text-align: end;
+}
+
+#google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-form p {
+  text-align: center;
+  color: #777;
+  margin: 20px 0;
+}
+
+@media (max-width : 700px){
+    .image-quote{
+        display: none;
+    }
+
+
+}
