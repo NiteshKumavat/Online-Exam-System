@@ -1,0 +1,101 @@
+.sidebar-container {
+    display: flex;
+    height: 100%;
+    width: 80px;
+    flex-direction: row;
+    background-color: rgb(13, 13, 110);
+    border-radius: 0 20px 20px 0;
+}
+
+.logo-container {
+    height: 100vh;
+    width: 80px;
+    background-color: rgb(111, 111, 200);
+    border-radius: 0px 12px 12px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toggle-visibility{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.toggle-visibility:hover{
+    background-color: rgb(111, 111, 180);
+}
+
+.logo-container a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.logo-container a:hover {
+    border-left : 12px solid white;
+
+}
+
+.text-container {
+    height: 100vh;
+    width: 220px;
+    background-color: rgb(13, 13, 110);
+    border-radius: 0px 12px 12px 0;
+    gap: 20px;
+    display: none;
+}
+
+.text-container.active{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-text{
+    font-size: 2rem;
+    font-family: fantasy;
+    color: rgb(240, 248, 255);
+    margin: 12px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.9s ease;
+}
+
+.logo-text:hover{
+    color: rgb(199, 206, 212);;
+}
+
+.text-container a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 20px 0 0 20px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+
+.text-container a:hover {
+    background-color: white;
+    color: black;
+}
