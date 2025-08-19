@@ -9,13 +9,14 @@ import {
   FaCog,
   FaSignOutAlt,
 } from "react-icons/fa";
+import { IoBookSharp } from "react-icons/io5";
 import "./SideBar.css"
 
 
 const SideBar = () => {
 
-    const icon_list = [<FaTachometerAlt size={30} />, <FaBook size={30} />, <FaCalendarAlt size={30} />, <FaFileAlt size={30} />, <FaComments size={30} />, <FaClipboardList size={30} />, <FaCog size={30} />, <FaSignOutAlt size={30} />]
-    const icon_label = ["DashBoard", "Lessons", "Schedule", "Materials", "Chats", "Assesments", "Settings", "Log Out"]
+    const icon_list = [<FaTachometerAlt size={30} />, <FaBook size={30} />, <FaCalendarAlt size={30} />, <IoBookSharp size={30} />, <FaComments size={30} />, <FaClipboardList size={30} />, <FaCog size={30} />, <FaSignOutAlt size={30} />]
+    const icon_label = ["DashBoard", "Lessons", "Schedule", "Exams", "Chats", "Assesments", "Settings", "Log Out"]
 
     return (
         <div className="sidebar-container" id="sidebar">
